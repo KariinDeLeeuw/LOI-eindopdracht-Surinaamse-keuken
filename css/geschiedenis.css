@@ -1,0 +1,368 @@
+@charset "UTF-8";
+
+/* CSS Document */
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+}
+
+body {
+  font-family: 'Catamaran', 'Cormorant Garamond', Times, serif;
+  background-color: #e6e6e6;
+}
+
+/* For mobile phones: */
+.wrapper {
+  width: 100%;
+}
+
+/* LOGO */
+.logo {
+  height: 100px;
+  width: 100px;
+  margin: 0 auto;
+}
+
+.logo img {
+  height: 100px;
+  width: 100px;
+  display: block;
+  margin: 0 auto;
+  text-align: center;
+  padding: 15px 0 10px;
+}
+
+.centered {
+  position: absolute;
+  top: 32px;
+  left: 44%;
+  font-size: 11px;
+  color: #B22222;
+  text-transform: uppercase;
+}
+
+/* New navbar */
+.navbar {
+  overflow: hidden;
+}
+
+.navbar a {
+  float: right;
+  font-size: 12px;
+  color: green;
+  text-align: center;
+  padding: 14px 7px;
+  text-decoration: none;
+  margin-top: 25px;
+}
+
+.dropdown {
+  float: right;
+  overflow: hidden;
+  margin-top: 25px;
+}
+
+.dropdown .dropbtn {
+  font-size: 12px;
+  border: none;
+  outline: none;
+  color: green;
+  padding: 14px 7px;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+}
+
+.navbar a:hover,
+.dropdown:hover .dropbtn {
+  color: red;
+  background-color: yellow;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  float: none;
+  color: green;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.dropdown-content a:hover {
+  background-color: yellow;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.current {
+ background-color: yellow;
+ color: #B22222;
+}
+/* Einde navbar */
+
+/* BANNER */
+.index-banner {
+  background-image: url(../pictures/banner.png);
+  width: 100%;
+  height: 150px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/* CONTENT */
+.index-content h2 {
+  font-family: Catamaran;
+  font-style: normal;
+  color: green;
+  padding-top: 10px;
+  margin: 5px;
+}
+
+.index-content p {
+  font-family: Cormorant Garamond;
+  color: black;
+  margin: 5px;
+  text-align: justify;
+}
+
+.rotimaken {
+  height: 250px;
+  width: 100%;
+  margin: 15px 0 10px 0;
+}
+
+.tabel {
+  font-family: Cormorant Garamond;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin: 20px auto;
+  text-align: center;
+  font-size: 18px;
+}
+
+.tabelkleur {
+  color: green;
+}
+
+.video {
+  margin: 30px auto 40px;
+}
+
+/* FOOTER */
+footer {
+  width: calc(100% - 30px);
+  padding: 15px 15px;
+  margin-top: 10px;
+  background-color: #B22222;
+  height: 85px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+footer ul {
+  display: flex;
+  flex-direction: column;
+  padding-left: 25px;
+  list-style: none;
+}
+
+footer ul li {
+  line-height: 15px;
+}
+
+footer ul li a {
+  font-size: 14px;
+  text-transform: uppercase;
+  color: yellow;
+}
+
+footer ul li a:hover {
+  color: black;
+}
+
+.footer-sm {
+  height: 100%;
+  width: 44%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.youtube {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  height: 40px;
+  width: 100px;
+}
+
+.footer-sm img {
+  height: 40px;
+  width: 40px;
+}
+
+footer p {
+  font-family: Cormorant Garamond;
+  font-style: italic;
+  color: black;
+  margin: 5px;
+  font-size: 12px;
+}
+
+@media only screen and (min-width: 640px) {
+  /* LOGO */
+  .logo {
+    margin-left: 50px;
+  }
+
+  .centered {
+    position: absolute;
+    top: 32px;
+    left: 74px;
+  }
+
+  /* NavBar 640 */
+  .navbar {
+    overflow: hidden;
+  }
+
+  .navbar a {
+    float: right;
+    font-size: 15px;
+    color: green;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+
+  .dropdown {
+    float: right;
+    overflow: hidden;
+  }
+
+  .dropdown .dropbtn {
+    font-size: 15px;
+    border: none;
+    outline: none;
+    color: green;
+    padding: 14px 16px;
+    background-color: inherit;
+    font-family: inherit;
+    margin: 0;
+  }
+
+  .navbar a:hover,
+  .dropdown:hover .dropbtn {
+    color: red;
+    background-color: yellow;
+  }
+
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+  }
+
+  .dropdown-content a {
+    float: none;
+    color: green;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+  }
+
+  .dropdown-content a:hover {
+    background-color: yellow;
+  }
+
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+
+  .contact {
+    margin-right: 20px;
+  }
+
+  /* BANNER */
+  .index-banner {
+    height: 170px;
+  }
+
+  /* CONTENT */
+  .index-content {
+    display: flex;
+    margin: 0px 25px;
+  }
+
+  .content1 {
+    flex-direction: column;
+    margin-right: 8px;
+  }
+
+  .rotimaken {
+    display: none;
+  }
+
+  .video {
+    display: block;
+    width: 560px;
+    height: 315px;
+    margin: 40px auto;
+  }
+
+  /* FOOTER */
+  footer ul li a {
+    font-size: 18px;
+    line-height: 18px;
+  }
+
+  .youtube {
+    height: 60px;
+  }
+
+  footer p {
+    font-size: 12px;
+  }
+
+  .footer-sm img {
+    height: 50px;
+    width: 50px;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  /* LOGO */
+  ul li a {
+    font-size: 24px;
+  }
+
+  .index-banner {
+    height: 310px;
+  }
+
+  /* CONTENT */
+  .index-content {
+    padding-left: 12%;
+    padding-right: 12%;
+  }
+}
